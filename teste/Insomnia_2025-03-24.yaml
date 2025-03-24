@@ -1,0 +1,533 @@
+type: collection.insomnia.rest/5.0
+name: Pizzaria
+meta:
+  id: wrk_ddc72e47ae4d4dd4ac182985254fa1a7
+  created: 1742821686148
+  modified: 1742821686148
+collection:
+  - name: Pizzaria
+    meta:
+      id: fld_c5700980bbc34a2598fa16001002246b
+      created: 1742822002400
+      modified: 1742822002400
+      sortKey: -1742822002400
+    children:
+      - name: PizzaPedido
+        meta:
+          id: fld_dc9dd1d43345401da65e82557baef393
+          created: 1742822122791
+          modified: 1742833864417
+          sortKey: -1742822122791
+        children:
+          - name: New Request
+            meta:
+              id: req_8a1fb5938fa941b980a25876fcbfd54b
+              created: 1742822160081
+              modified: 1742822160081
+              isPrivate: false
+              sortKey: -1742822160081
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/pizzapedidos/9
+            name: New Request
+            meta:
+              id: req_919d88abf584409fa92a8e90a3eaf868
+              created: 1742822378014
+              modified: 1742838226886
+              isPrivate: false
+              sortKey: -1742822160281
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: New Request
+            meta:
+              id: req_db890c7a3a41406d9de649c3bd68c82a
+              created: 1742822381445
+              modified: 1742822435011
+              isPrivate: false
+              sortKey: -1742822160381
+            method: PUT
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/pizzapedidos
+            name: New Request
+            meta:
+              id: req_70f33084f35c4c6aad8c772f7788fe23
+              created: 1742833823672
+              modified: 1742837976843
+              isPrivate: false
+              sortKey: -1742822160181
+            method: GET
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"id": 5,
+                		"pizzaId": 2,
+                		"pedidoId": 7,
+                		"valor": 35,
+                		"subtotal": 70,
+                		"quantidade": 2
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/pizzapedidos
+            name: New Request
+            meta:
+              id: req_64ede7ba5f70466f9029a44f50cf8fba
+              created: 1742833842824
+              modified: 1742838211234
+              isPrivate: false
+              sortKey: -1742833842824
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"id": 7,
+                		"pizzaId": 4,
+                		"pedidoId": 7,
+                		"valor": 64,
+                		"subtotal": 216,
+                		"quantidade": 2
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Pedidos
+        meta:
+          id: fld_23ea20c732b5438db89d682eabbbed1c
+          created: 1742822424227
+          modified: 1742822424227
+          sortKey: -1742822062595.5
+        children:
+          - url: http://localhost:5000/pedidos/1
+            name: New Request
+            meta:
+              id: req_9e746844167649d1afd94c69678614ac
+              created: 1742822424230
+              modified: 1742842661908
+              isPrivate: false
+              sortKey: -1742822160081
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/pedidos
+            name: New Request
+            meta:
+              id: req_5175664baf12424eaa91624e7b77a1aa
+              created: 1742822424231
+              modified: 1742831338390
+              isPrivate: false
+              sortKey: -1742822160181
+            method: GET
+            body:
+              mimeType: application/json
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/pedidos
+            name: New Request
+            meta:
+              id: req_125ed524c224479b845451eef0e33503
+              created: 1742822424232
+              modified: 1742832374373
+              isPrivate: false
+              sortKey: -1742822160481
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                
+                {
+                    "quando": "2025-03-24T14:34:39.955Z",
+                    "valor": 35.00,
+                    "clienteId": 10,
+                    "pizzaId": 10
+                  }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/pedidos/6
+            name: New Request
+            meta:
+              id: req_253eae2b44e1443aac0d623009ee64c9
+              created: 1742822424233
+              modified: 1742831519203
+              isPrivate: false
+              sortKey: -1742822160281
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: New Request
+            meta:
+              id: req_a4daf12863b24ce9a8b1b4e30147d670
+              created: 1742822424234
+              modified: 1742822447558
+              isPrivate: false
+              sortKey: -1742822160381
+            method: PUT
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Cliente
+        meta:
+          id: fld_495b4f6c703945219c9b0b5525fc8b65
+          created: 1742822467244
+          modified: 1742822467244
+          sortKey: -1742822032497.75
+        children:
+          - url: http://localhost:5000/clientes
+            name: New Request
+            meta:
+              id: req_e866c7373b73443292e212fc95f7283e
+              created: 1742822467246
+              modified: 1742824629600
+              isPrivate: false
+              sortKey: -1742822160081
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/clientes
+            name: New Request
+            meta:
+              id: req_7102d72859e34ff081f0f79843fbed09
+              created: 1742822467247
+              modified: 1742824747777
+              isPrivate: false
+              sortKey: -1742822160181
+            method: GET
+            body:
+              mimeType: application/json
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/clientes
+            name: New Request
+            meta:
+              id: req_627f9ae6dfc543d3b5276d9511408fc1
+              created: 1742822467249
+              modified: 1742827509392
+              isPrivate: false
+              sortKey: -1742822160481
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {"nome": "João Silva",
+                  "numero": "123456789",
+                  "telefone": "(11) 98765-4321",
+                  "logradouro": "Rua das Flores, 123",
+                  "bairro": "Jardim das Acácias",
+                  "referencia": "Perto da padaria"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/clientes/5
+            name: New Request
+            meta:
+              id: req_52e9a88456c84e2a9b095b52c542494e
+              created: 1742822467251
+              modified: 1742827470555
+              isPrivate: false
+              sortKey: -1742822160281
+            method: DELETE
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"id": 5,
+                		"nome": "Pedro Santos",
+                		"numero": "321654987",
+                		"telefone": "(51) 92345-6789",
+                		"logradouro": "Rua dos Lírios, 12",
+                		"bairro": "Santa Maria",
+                		"referencia": "Em frente à igreja"
+                	}
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: New Request
+            meta:
+              id: req_1315b7a7b3d04f81985c8f5e16abce9b
+              created: 1742822467252
+              modified: 1742822467252
+              isPrivate: false
+              sortKey: -1742822160381
+            method: PUT
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Pizza
+        meta:
+          id: fld_a83aa164698f43da83f5f45a57f9b99c
+          created: 1742833774063
+          modified: 1742833774063
+          sortKey: -1742822092693.25
+        children:
+          - name: New Request
+            meta:
+              id: req_b8b3099fae3c4587881584bd53e6b33e
+              created: 1742833774066
+              modified: 1742833774066
+              isPrivate: false
+              sortKey: -1742822160081
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/pizzas
+            name: New Request
+            meta:
+              id: req_80d40c1ef397425fb624f0bc6433e733
+              created: 1742833774068
+              modified: 1742833774068
+              isPrivate: false
+              sortKey: -1742822160181
+            method: GET
+            body:
+              mimeType: application/json
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:5000/pizzas
+            name: New Request
+            meta:
+              id: req_1d228e9cb5d745c48a326e463e7238f4
+              created: 1742833774069
+              modified: 1742833774069
+              isPrivate: false
+              sortKey: -1742822160481
+            method: POST
+            body:
+              mimeType: application/json
+              text: >-
+                {"nome": "Pizza de Portuguesa",
+                  "descricao": "Pizza com presunto, ovo, cebola, azeitonas e queijo",
+                  "valor": 36.00
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: New Request
+            meta:
+              id: req_b57dc98cc827459fb9c33f34c440a67d
+              created: 1742833774070
+              modified: 1742833774070
+              isPrivate: false
+              sortKey: -1742822160281
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - name: New Request
+            meta:
+              id: req_3f166f74e96f4103a085508b6be27913
+              created: 1742833774071
+              modified: 1742833774071
+              isPrivate: false
+              sortKey: -1742822160381
+            method: PUT
+            headers:
+              - name: User-Agent
+                value: insomnia/11.0.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_8b55b7697faceab5cdc579e18cceea39e7f99d48
+    created: 1742821686160
+    modified: 1742821686160
+environments:
+  name: Base Environment
+  meta:
+    id: env_8b55b7697faceab5cdc579e18cceea39e7f99d48
+    created: 1742821686156
+    modified: 1742821686156
+    isPrivate: false
